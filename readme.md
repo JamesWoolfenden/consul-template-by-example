@@ -13,11 +13,12 @@ There's an example template file called *miss.tpl*. This looks like:
 ```
 Key:Foo:{{key "foo"}}
 MissingKey:{{if keyExists "MissingKey"}}{{key "MissingKey"}}{{else}}nothing{{end}}
-DefaultValue:{{keyOrDefault "Duffer" ""}} ```
-
+DefaultValue:{{keyOrDefault "Duffer" ""}}
+```
 First we'll add some data to Consul.
 
-``` consul kv put foo bar ```
+``` consul kv put foo bar
+```
 
 Then when we run consul-template:
 
