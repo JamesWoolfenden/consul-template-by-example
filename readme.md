@@ -17,8 +17,7 @@ DefaultValue:{{keyOrDefault "Duffer" ""}}
 ```
 First we'll add some data to Consul.
 
-``` consul kv put foo bar
-```
+``` consul kv put foo bar ```
 
 Then when we run consul-template:
 
