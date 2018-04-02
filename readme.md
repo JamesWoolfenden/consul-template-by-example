@@ -12,8 +12,8 @@ There's an example template file called miss.tpl. This looks like:
 ```
 Key:Foo:{{key "foo"}}
 MissingKey:{{if keyExists "MissingKey"}}{{key "MissingKey"}}{{else}}nothing{{end}}
-DefaultValue:{{keyOrDefault "Duffer" ""}} ```
-
+DefaultValue:{{keyOrDefault "Duffer" ""}}
+```
 First we'll add some data to Consul.
 
 ``` consul kv put foo bar ```
@@ -26,8 +26,8 @@ Check the contents of the miss.out file.
 ```
 Key:Foo:bar
 MissingKey:nothing
-DefaultValue:```
-
+DefaultValue: 
+```
 Then we'll add a value for MissingKey variable.
 
 ``` consul kv put MissingKey Time```
