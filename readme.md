@@ -1,5 +1,5 @@
 ### Consul template: By Example
-This is a very simple example shows how to use consul and consul-template to get data and how to handle missing and default values. The consul setup is only for development purposes.
+This is a very simple example shows how to use consul and consul-template to get data in and out, and how to handle missing and default values. The consul setup is only for development purposes.
 
 Download this repository [here](https://github.com/JamesWoolfenden/consul-template-by-example)
 
