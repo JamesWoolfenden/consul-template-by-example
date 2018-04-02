@@ -15,6 +15,8 @@ Key:Foo:{{key "foo"}}
 MissingKey:{{if keyExists "MissingKey"}}{{key "MissingKey"}}{{else}}nothing{{end}}
 DefaultValue:{{keyOrDefault "Duffer" ""}}
 ```
+Consul-template uses the Go templating format- curly brackets the rest of the file is treated as text. The first line is a regular KV retrieval, the second line shows how to cope with missing values and the last line for default values.  
+
 First we'll add some data to Consul.
 
 ``` consul kv put foo bar ```
@@ -22,6 +24,8 @@ First we'll add some data to Consul.
 Then when we run consul-template:
 
 ```consul-template -template miss.tpl:miss.out -once ```
+
+The -once option "Do not run the process as a daemon".
 
 Check the contents of the **miss.out** file.
 ```
