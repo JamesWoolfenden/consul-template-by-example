@@ -1,5 +1,6 @@
 ### Consul template: By Example
 This example shows how to use consul and consul-template to get data and how to handle missing and default values.
+Download this repository [here](https://github.com/JamesWoolfenden/consul-template-by-example)
 
 ### Set-up the tools
 Run both shell scripts to get the tools consul and consul-template.
@@ -26,7 +27,7 @@ Check the contents of the miss.out file.
 ```
 Key:Foo:bar
 MissingKey:nothing
-DefaultValue: 
+DefaultValue:
 ```
 Then we'll add a value for MissingKey variable.
 
