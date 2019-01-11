@@ -1,0 +1,5 @@
+#Makefile
+
+.PHONY: clean
+
+clean:
