@@ -2,7 +2,7 @@
 
 This is a very simple example shows how to use consul and consul-template to get data in and out, and how to handle missing and default values. The consul setup is only for development purposes.
 
-Download this repository [[here](https://github.com/JamesWoolfenden/consul-template-by-example)](https://github.com/JamesWoolfenden/consul-template-by-example)
+Download this repository [https://github.com/JamesWoolfenden/consul-template-by-example](https://github.com/JamesWoolfenden/consul-template-by-example)
 
 ## Set-up the tools
 
