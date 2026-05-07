@@ -34,7 +34,7 @@ The -once option "Do not run the process as a daemon".
 
 Check the contents of the **miss.out** file.
 
-```jina2
+```jinja2
 Key:Foo:bar
 MissingKey:nothing
 DefaultValue:
